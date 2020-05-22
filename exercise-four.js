@@ -14,15 +14,20 @@ the class.*/
 
     // <input id="confirm" type="checkbox" />
     // <button id="submit" class="hidden"> Submit </button>
-    
-    const myButton = document.querySelector('button');
-    const myCheckbox = document.querySelector('input');
 
-    myCheckbox.addEventListener('click',() => { // function to toggle hidden submit button
-    
-            myButton.classList.toggle("hidden"); // removes the class "hidden" from button
-    
-    });
+        /*----------------------------------------------*/
+
+        // const myButton = document.querySelector('button');
+        // const myCheckbox = document.querySelector('input');
+
+        // myCheckbox.addEventListener('click',() => { // function to toggle hidden submit button
+        
+        //         myButton.classList.toggle("hidden"); // removes the class "hidden" from button
+        
+        // });
+
+        /*----------------------------------------------*/
+
     // ^^^ function to toggle hidden submit button ^^^ // 
    
 
@@ -32,6 +37,27 @@ the class.*/
     // <input id="r-input" type="text" /> 
     // <button id="check"> Check </button>
 
+        /*----------------------------------------------*/
+        const myButton = document.querySelector('button');
+        const myInput = document.querySelector('input');
+
+        myButton.addEventListener('click',() => { 
+            value = myInput.value;
+
+            if (value === ''){
+                alert(`Please enter a value in the text field`)
+            }
+            else if(!isNaN(value) === true) {
+              
+               alert(`The input value is a number!`);
+            }
+            else {
+                alert(`The input value is not a number...`);
+            }        
+        });
+         /*----------------------------------------------*/
+
+        // ^^^ function to determine whether string value is number or string ^^^ // 
 
 /*3. Given the following HTML, when the page loads, remove the “hidden” class on the 
 “container” div.*/
