@@ -12,26 +12,33 @@ Requirements:
 user checks the "confirm" checkbox. If the user unchecks the box, add "hidden" back to 
 the class.*/
 
-    <input id="confirm" type="checkbox" />
-    <button id="submit" class="hidden">Submit</button>
+    // <input id="confirm" type="checkbox" />
+    // <button id="submit" class="hidden"> Submit </button>
+    
+    const myButton = document.querySelector('button');
+    const myCheckbox = document.querySelector('input');
 
-    const removeHidden = document.querySelector(#confirm);
-
-    removeHidden.
+    myCheckbox.addEventListener('click',() => { // function to toggle hidden submit button
+    
+            myButton.classList.toggle("hidden"); // removes the class "hidden" from button
+    
+    });
+    // ^^^ function to toggle hidden submit button ^^^ // 
+   
 
 /* 2. Given the following HTML, when the user clicks the button, display an alert box saying
  whether or not the value in the text box is a number.*/
  
-    <input id="r-input" type="text" /> 
-    <button id="check"> Check </button>
+    // <input id="r-input" type="text" /> 
+    // <button id="check"> Check </button>
 
 
 /*3. Given the following HTML, when the page loads, remove the “hidden” class on the 
 “container” div.*/
 
-    <div class="center">
-    <div id="container" class="hidden">Hello!</div>
-    </div>
+    // <div class="center">
+    //     <div id="container" class="hidden">Hello!</div>
+    // </div>
 
 // Stretch Requirements:
 
@@ -40,16 +47,16 @@ the class.*/
 //     b. When box2 is clicked, set the background color of box 1 to yellow.
 //     c. When the mouse pointer exits either box1 or box2, clear both of their colors.
 
-        <div id="box1">BOX 1</div> 
-        <div id="box2">BOX 2</div>
+        // <div id="box1">BOX 1</div> 
+        // <div id="box2">BOX 2</div>
 
 // 2. Given the following HTML, update the corresponding span tag whenever a text box has 
 // its value changed.
 
-        <span id="firstname_preview"> </span> 
-        <span id="lastname_preview"> </span>
-        <span id="zip_preview"> </span>
+        // <span id="firstname_preview"> </span> 
+        // <span id="lastname_preview"> </span>
+        // <span id="zip_preview"> </span>
 
-        <input type="textbox" id="firstname" /> 
-        <input type="textbox" id="lastname" /> 
-        <input type="textbox" id="zip" />
+        // <input type="textbox" id="firstname" /> 
+        // <input type="textbox" id="lastname" /> 
+        // <input type="textbox" id="zip" />

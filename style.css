@@ -1,4 +1,16 @@
-h1 {
-color: red;
 
+.hidden {
+    display: none;
+    background-color: blue;
+    padding: 10px;
+};
+
+#confirm {
+    background-color: blue;
+    color: magenta;
+};
+
+#submit {
+    background-color: green;
+    color: red;
 };
