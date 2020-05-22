@@ -1,8 +1,19 @@
 
 .hidden {
     display: none;
+    padding: 10px;
+};
+
+.default {
+    
     background-color: blue;
     padding: 10px;
+};
+.center {
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    color: red;
 };
 
 #confirm {

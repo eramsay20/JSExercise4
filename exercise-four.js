@@ -29,7 +29,7 @@ the class.*/
         /*----------------------------------------------*/
 
     // ^^^ function to toggle hidden submit button ^^^ // 
-   
+   // for an alternate solution: https://teamtreehouse.com/library/styling-elements // 
 
 /* 2. Given the following HTML, when the user clicks the button, display an alert box saying
  whether or not the value in the text box is a number.*/
@@ -38,23 +38,23 @@ the class.*/
     // <button id="check"> Check </button>
 
         /*----------------------------------------------*/
-        const myButton = document.querySelector('button');
-        const myInput = document.querySelector('input');
+        // const myButton = document.querySelector('button');
+        // const myInput = document.querySelector('input');
 
-        myButton.addEventListener('click',() => { 
-            value = myInput.value;
+        // myButton.addEventListener('click',() => { 
+        //     value = myInput.value;
 
-            if (value === ''){
-                alert(`Please enter a value in the text field`)
-            }
-            else if(!isNaN(value) === true) {
+        //     if (value === ''){
+        //         alert(`Please enter a value in the text field`)
+        //     }
+        //     else if(!isNaN(value) === true) {
               
-               alert(`The input value is a number!`);
-            }
-            else {
-                alert(`The input value is not a number...`);
-            }        
-        });
+        //        alert(`The input value is a number!`);
+        //     }
+        //     else {
+        //         alert(`The input value is not a number...`);
+        //     }        
+        // });
          /*----------------------------------------------*/
 
         // ^^^ function to determine whether string value is number or string ^^^ // 
@@ -65,6 +65,15 @@ the class.*/
     // <div class="center">
     //     <div id="container" class="hidden">Hello!</div>
     // </div>
+
+        /*----------------------------------------------*/
+        // const containerDiv = document.querySelector('div.hidden');
+
+        // document.onLoad = ( () => {
+        //         containerDiv.className = "default";
+        // });
+        /*----------------------------------------------*/
+        // ^^^ function to show hidden .div following page load ^^^ // 
 
 // Stretch Requirements:
 
@@ -86,3 +95,17 @@ the class.*/
         // <input type="textbox" id="firstname" /> 
         // <input type="textbox" id="lastname" /> 
         // <input type="textbox" id="zip" />
+
+
+
+
+
+
+
+        // RESOURCE LINKS: 
+        // create new element in DOM: https://teamtreehouse.com/library/creating-new-dom-elements
+        // append nodes/element to DOM: https://teamtreehouse.com/library/appending-nodes 
+        // remove node/element from DOM: https://teamtreehouse.com/library/removing-nodes
+        // delay execution of event/function: https://teamtreehouse.com/library/delaying-execution-with-settimeout  
+        // event listener run through: https://teamtreehouse.com/library/listening-for-events-with-addeventlistener
+        // event object (event.target): https://teamtreehouse.com/library/the-event-object-2
